@@ -2950,3 +2950,297 @@ nav {
   #publications {
     padding-top: 50px;
   }
+
+  /* =========================
+   OFFLINE MODE
+========================= */
+
+.offline-list {
+    width: 100%;
+  
+    border-top:
+      1px solid rgba(255,255,255,0.08);
+  }
+  
+  
+  /* EACH ROW */
+  
+  .offline-item {
+    display: grid;
+  
+    grid-template-columns:
+      60px 1fr 40px;
+  
+    align-items: center;
+  
+    gap: 20px;
+  
+    padding: 25px 5px;
+  
+    border-bottom:
+      1px solid rgba(255,255,255,0.08);
+  
+    transition:
+      padding-left 0.3s ease,
+      background 0.3s ease;
+  }
+  
+  
+  /* NUMBER */
+  
+  .offline-number {
+    color: #38bdf8;
+  
+    font-family: monospace;
+    font-size: 10px;
+  
+    letter-spacing: 2px;
+  }
+  
+  
+  /* CATEGORY */
+  
+  .offline-label {
+    color: #64748b;
+  
+    font-family: monospace;
+    font-size: 8px;
+  
+    letter-spacing: 2px;
+  
+    margin: 0 0 5px;
+  }
+  
+  
+  /* TITLE */
+  
+  .offline-item h3 {
+    color: #f8fafc;
+  
+    font-size: 18px;
+    font-weight: 600;
+  
+    margin: 0 0 5px;
+  }
+  
+  
+  /* DESCRIPTION */
+  
+  .offline-description {
+    color: #64748b;
+  
+    font-size: 12px;
+    line-height: 1.6;
+  
+    margin: 0;
+  }
+  
+  
+  /* RIGHT SYMBOL */
+  
+  .offline-symbol {
+    color: #475569;
+  
+    font-size: 17px;
+  
+    text-align: right;
+  
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  
+  /* CLICKABLE ROWS */
+  
+  .offline-link {
+    text-decoration: none;
+    color: inherit;
+  
+    cursor: pointer;
+  }
+  
+  
+  /* HOVER */
+  
+  .offline-item:hover {
+    padding-left: 15px;
+  
+    background:
+      linear-gradient(
+        90deg,
+        rgba(56,189,248,0.04),
+        transparent
+      );
+  }
+  
+  
+  .offline-item:hover .offline-symbol {
+    color: #38bdf8;
+  
+    transform: translateX(5px);
+  }
+  
+  
+  .offline-link:hover h3 {
+    color: #38bdf8;
+  }
+  
+  
+  /* MOBILE */
+  
+  @media(max-width: 768px) {
+  
+    .offline-item {
+      grid-template-columns:
+        35px 1fr 25px;
+  
+      gap: 12px;
+  
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .offline-item h3 {
+      font-size: 16px;
+    }
+  
+    .offline-description {
+      font-size: 11px;
+    }
+  
+  }
+
+  /* =========================
+   TECH STACK
+========================= */
+
+.tech-stack-grid {
+    display: grid;
+  
+    grid-template-columns:
+      repeat(2, 1fr);
+  
+    gap: 1px;
+  
+    background:
+      rgba(255,255,255,0.07);
+  
+    border:
+      1px solid rgba(255,255,255,0.07);
+  }
+  
+  
+  /* CATEGORY */
+  
+  .tech-category {
+    position: relative;
+  
+    padding: 30px;
+  
+    background: #07101c;
+  
+    transition:
+      background 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  
+  /* NUMBER */
+  
+  .tech-number {
+    color: #38bdf8;
+  
+    font-family: monospace;
+    font-size: 9px;
+  
+    letter-spacing: 2px;
+  
+    margin:
+      0 0 15px;
+  }
+  
+  
+  /* CATEGORY TITLE */
+  
+  .tech-category h3 {
+    color: #f8fafc;
+  
+    font-size: 16px;
+    font-weight: 600;
+  
+    margin:
+      0 0 20px;
+  }
+  
+  
+  /* SKILLS */
+  
+  .tech-items {
+    display: flex;
+  
+    flex-wrap: wrap;
+  
+    gap: 8px;
+  }
+  
+  
+  .tech-items span {
+    padding:
+      7px 11px;
+  
+    border:
+      1px solid rgba(148,163,184,0.14);
+  
+    color: #94a3b8;
+  
+    font-family: monospace;
+    font-size: 9px;
+  
+    letter-spacing: 0.5px;
+  
+    transition:
+      color 0.25s ease,
+      border-color 0.25s ease,
+      background 0.25s ease,
+      transform 0.25s ease;
+  }
+  
+  
+  /* CATEGORY HOVER */
+  
+  .tech-category:hover {
+    background:
+      rgba(56,189,248,0.025);
+  }
+  
+  
+  /* SKILL HOVER */
+  
+  .tech-items span:hover {
+    color: #38bdf8;
+  
+    border-color:
+      rgba(56,189,248,0.4);
+  
+    background:
+      rgba(56,189,248,0.05);
+  
+    transform:
+      translateY(-2px);
+  }
+  
+  
+  /* MOBILE */
+  
+  @media(max-width: 768px) {
+  
+    .tech-stack-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .tech-category {
+      padding: 25px 20px;
+    }
+  
+  }
