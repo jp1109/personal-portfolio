@@ -3244,3 +3244,20 @@ nav {
     }
   
   }
+
+  .hero-description {
+    margin-top: 24px;
+    margin-bottom: 30px;
+  
+    color: #94a3b8;
+  
+    font-size: 16px;
+    line-height: 1.7;
+  
+    max-width: 680px;
+  }
+
+  .hero-buttons {
+    margin-top: 10px;
+  }
+
