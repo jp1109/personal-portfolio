@@ -3408,3 +3408,43 @@ nav {
   transform: none !important;
   min-height: 500px !important;
 }
+
+/* =========================
+   FINAL SECTION RHYTHM
+========================= */
+
+.content-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.section-title {
+  margin-bottom: 42px;
+}
+
+.section-title p {
+  margin-bottom: 10px;
+}
+
+.section-title h2 {
+  margin-top: 0;
+}
+
+.section-title p,
+.category,
+.tech-number,
+.offline-label,
+.cert-provider {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+a[target="_blank"] {
+  transition:
+    color 0.25s ease,
+    opacity 0.25s ease;
+}
+
+a[target="_blank"]:hover {
+  color: #38bdf8;
+}
+
