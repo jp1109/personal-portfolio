@@ -3261,3 +3261,150 @@ nav {
     margin-top: 10px;
   }
 
+  /* ========================================
+   CERTIFICATIONS & CURRENT LEARNING
+======================================== */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+
+  margin-top: 50px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cert-card {
+  position: relative;
+
+  min-height: 270px;
+  padding: 34px;
+
+  background: #07111f;
+
+  transition:
+      transform 0.3s ease,
+      background 0.3s ease;
+}
+
+.cert-card:hover {
+  background: rgba(56, 189, 248, 0.05);
+  transform: translateY(-3px);
+}
+
+.cert-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 45px;
+}
+
+.cert-number {
+  font-family: monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #64748b;
+}
+
+.cert-status {
+  padding: 6px 10px;
+
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 20px;
+
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+
+  color: #38bdf8;
+}
+
+.cert-status.active {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.3);
+}
+
+.cert-provider {
+  margin-bottom: 8px;
+
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 3px;
+
+  color: #38bdf8;
+}
+
+.cert-card h3 {
+  margin: 0 0 14px;
+
+  font-size: 22px;
+  color: #f8fafc;
+}
+
+.cert-description {
+  max-width: 430px;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: #94a3b8;
+}
+
+.cert-year {
+  position: absolute;
+  bottom: 28px;
+  left: 34px;
+
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  color: #64748b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .cert-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .cert-card {
+      min-height: 250px;
+  }
+}
+
+.reveal,
+.reveal.active,
+.content-section,
+#about,
+#tech-stack,
+#projects,
+#education,
+#experience,
+#publications,
+#offline,
+#contact {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+#certifications {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+#certifications {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  min-height: 500px !important;
+}
