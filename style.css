@@ -3490,3 +3490,27 @@ a[target="_blank"]:hover {
   margin-top: auto;
   padding-top: 20px;
 }
+
+/* Final featured project alignment */
+#projects .project-row > .project-card {
+  display: grid !important;
+  grid-template-rows: 1fr;
+  align-items: stretch !important;
+  justify-content: initial !important;
+}
+
+#projects .project-row > .project-card > .card-content {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-self: stretch !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+  min-height: 100%;
+}
+
+#projects .project-row > .project-card .links {
+  margin-top: auto !important;
+  padding-top: 20px;
+}
